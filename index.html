@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>作品集</title>
+
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+            border:1px solid rgb(232, 232, 232);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 半透明黑色背景 */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            /* 初始时透明 */
+            transition: opacity 0.3s ease;
+            /* 添加渐变效果 */
+            font-size: 22px;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+            /* 鼠标悬停时显示 */
+        }
+        .tag-content{
+            height:45px;
+            margin-bottom: 0.5rem;
+            margin-left:6px;
+            font-size: 14px;
+        }
+        .border-0{
+            border:0px;            
+        }
+        .card-title{
+            margin-bottom: 1.7rem;
+            text-align: center;
+        }
+        .list-group{
+
+        }
+        .list-group-item {
+            left:-12px;
+            padding-bottom: 0.1rem;
+            padding-top: 0.1rem;
+        }
+    </style>
+
+</head>
+
+<body class="bg-dark">
+<h1 class="text-white text-center py-4">作品集</h1>
+    <main class="container mt-3 ">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card ">
+                    <div class="image-container">
+                        <img src="./images/全國法規查詢系統/全國法規查詢系統_Thumbnail.png" style="height:200px" class="card-img-top mx-auto "
+                            alt="全國法規查詢系統">
+                        <!-- <div class="overlay">
+                            <p>全國法規查詢系統</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="card-title text-center">全國法規查詢系統</h2>
+                        <p class="card-text ">
+                            <div class="text-secondary tag-content">
+                                #VueJS 2.6 #Bootstrap-Vue #PHP #Python #MySQL #Linux #前後端分離架構
+                            </div>
+                            <div>
+                                <ul class="list-group   list-group-numbered">
+                                    <li class="list-group-item border-0">區網形式提供同仁線上查詢法律條文</li>
+                                    <li class="list-group-item border-0">VueJS、BootstrapVue、前後端分離</li>
+                                    <li class="list-group-item border-0">規劃、設計、開發獨立作業完成</li>
+                                </ul>
+                            </div>                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="image-container ">
+                        
+                        <img src="./images/學生學習成就資料/國家教育研究院學生學習成就資料_Thumbnail.png" style="height:200px" class="card-img-top"
+                            alt="國家教育研究院學生學習成就資料">
+                            <a href="https://tasal.naer.edu.tw/dsa/dsa" target="_blank" class="text-white text-decoration-none">
+                                <div class="overlay">                            
+                                    學生學習成就資料
+                                </div>
+                            </a>                        
+                            <i class="bi bi-search position-absolute top-0 end-0 text-warning fs-4"></i>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="card-title">學生學習成就資料</h2>
+                        <p class="card-text">
+                            <div class="text-secondary tag-content">
+                                #接案 #bootstrap5 #RWD #SCSS #figma #docker #git
+                            </div>                            
+                            <div>
+                                <ul class="list-group list-group-numbered">
+                                    <li class="list-group-item border-0">國家計劃資料公開網站</li>
+                                    <li class="list-group-item border-0">Figma雛型設計、RWD網頁設計</li>
+                                    <li class="list-group-item border-0">規劃、設計、開發獨立作業完成</li>
+                                </ul>
+                            </div>
+                        </p>
+                        
+                        <!-- <p class="card-text">
+                            
+                            <a href="https://www.figma.com/proto/dgXckZystzfostlGOz2plb/DSA?node-id=1-6&mode=design&t=TFL0c9BMQ0ZEGIba-1" target="_blank" class="link-primary">Figma</a>                        
+                        </p> -->
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="./images/英語力官網/英語力官網_Thumbnail.png" style="height:200px" class="card-img-top" alt="英語力官網">
+                        <a href="https://tasep.naer.edu.tw/" target="_blank" class="text-white text-decoration-none">
+                            <div class="overlay"  >                            
+                                英語力官網
+                            </div>
+                        </a>   
+                        <i class="bi bi-search position-absolute top-0 end-0 text-warning fs-4"></i>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="card-title">英語力官網</h2>
+                        <p class="card-text">
+                            <div class="text-secondary tag-content">
+                                #接案 #bootstrap5 #SCSS #無障礙網頁 #弱掃 #git #docker
+                            </div>                            
+                            <div>
+                                <ul class="list-group   list-group-numbered">
+                                    <li class="list-group-item border-0">國家計劃資料公開網站</li>
+                                    <li class="list-group-item border-0">SCSS客製化、無障礙網頁認證、通過弱點掃描</li>
+                                    <li class="list-group-item border-0">依設計師版型實作完成案子</li>
+                                </ul>
+                            </div>
+                        </p>                                                
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" >
+                    <div class="image-container" data-bs-toggle="modal" data-bs-target="#dictImageModal">
+                        <img src="./images/英語力字典管理系統/英語力字典管理系統_Thumbnail.png" style="height:200px" class="card-img-top" alt="英語力字典管理系統">
+                        <div class="overlay" style="cursor: pointer;">
+                            <p>英語力字典管理系統</p>
+                        </div>
+                        <i class="bi bi-search position-absolute top-0 end-0 text-warning fs-4"></i>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">英語力字典管理系統</h2>
+                        <p class="card-text ">
+                            <div class="text-secondary tag-content">
+                                #接案 #Vue3 #vite #element-plus #typescript #PHP Laravel #前後端分離
+                            </div>
+                            <div>
+                                <ul class="list-group   list-group-numbered">
+                                    <li class="list-group-item border-0">測驗字典建立平台</li>
+                                    <li class="list-group-item border-0">Vue3、Element-Plus、PHP Laravel</li>
+                                    <li class="list-group-item border-0">規劃、設計、開發獨立作業完成</li>
+                                </ul>
+                            </div>                            
+                        </p>                                                
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="./images/載浮載沉/載浮載沉_Thumbnail.png" style="height:200px" class="card-img-top" alt="遊戲：載浮載沉">
+                        <!-- <div class="overlay">
+                            <p>載浮載沉</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="card-title">載浮載沉</h2>         
+                        <p class="card-text ">
+                        <div class="text-secondary tag-content">
+                            #接案 #phaser3 #es6 #git #docker #npm build
+                        </div>
+                        <div>
+                            <ul class="list-group   list-group-numbered">
+                                <li class="list-group-item border-0">物理實驗的網頁互動遊戲</li>
+                                <li class="list-group-item border-0">phaser3遊戲框架</li>
+                                <li class="list-group-item border-0">規劃、設計、開發獨立作業完成</li>
+                            </ul>
+                        </div>    
+                    </p>                                         
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="./images/採樣分析系統/採樣分析系統_Thumbnail.png" style="height:200px" class="card-img-top" alt="採樣分析系統">
+                        <!-- <div class="overlay">
+                            <p>採樣分析系統</p>
+                        </div> -->
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">採樣分析系統</h2>       
+                        <p class="card-text ">
+                        <div class="text-secondary tag-content">
+                            #Unity #CSharp #AI #Python FastAPI #EChart #自動化
+                        </div>
+                        <div>
+                            <ul class="list-group   list-group-numbered">
+                                <li class="list-group-item border-0">即時分析採樣資料，驗證有效性、可用性</li>
+                                <li class="list-group-item border-0">手機AI辨識與採樣、WEB接收與監控</li>
+                                <li class="list-group-item border-0">團隊合作、整合手機與網站</li>
+                            </ul>
+                        </div>                
+                    </p>                            
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="./images/商品追蹤平台/商品追蹤平台_Thumbnail.png" style="height:200px" class="card-img-top" alt="商品追蹤平台">
+                        <!-- <div class="overlay">
+                          <p>商品追蹤平台</p>
+                        </div> -->
+                      </div>  
+                    
+                    <div class="card-body">
+                        <h2 class="card-title">商品追蹤平台</h2>
+                        <p class="card-text">
+                        <div class="text-secondary tag-content">
+                            #Unity #CSharp #AI #PHP CI3 #GoogleMap #JWT #JQuery #Layui Mini
+                        </div>
+                        <div>
+                            <ul class="list-group   list-group-numbered">
+                                <li class="list-group-item border-0">管理用戶回報商品狀況平台</li>
+                                <li class="list-group-item border-0">手機AI辨識上傳、GoogleMap整合</li>
+                                <li class="list-group-item border-0">研發、創新、團隊合作、整合手機與網站服務</li>
+                            </ul>
+                        </div>   
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="./images/智能掃描器/智能掃描器_Thumbnail.png" style="height:200px" class="card-img-top" alt="智能掃描器">
+                        <!-- <div class="overlay">
+                          <p>智能掃描器</p>
+                        </div> -->
+                      </div>  
+                    
+                    <div class="card-body">
+                        <h2 class="card-title">智能掃描器</h2>
+                        <p class="card-text ">
+                        <div class="text-secondary tag-content">
+                            #Unity #CSharp #AI #OpenCV #SQLite 
+                        </div>
+                        <div>
+                            <ul class="list-group   list-group-numbered">
+                                <li class="list-group-item border-0">雙平台手機APP，提供用戶即時辯識商品</li>
+                                <li class="list-group-item border-0">電腦視覺技術與AI Model整合，掃描辨識商品</li>
+                                <li class="list-group-item border-0">研發、挑戰、創新、團隊合作</li>
+                            </ul>
+                        </div>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#mobileAppImageModal">
+                    <div class="image-container">
+                        <img src="./images/行動化專案/行動化專案_Thumbnail.jpg" style="height:200px" class="card-img-top" alt="行動化專案">
+                        <div class="overlay" style="cursor: pointer;">
+                          <p>行動化專案</p>
+                        </div>
+                        <i class="bi bi-search position-absolute top-0 end-0 text-warning fs-4"></i>
+                      </div>                      
+                    
+                    <div class="card-body">
+                        <h2 class="card-title">行動化專案</h2>
+                        <p class="card-text">
+                        <div class="text-secondary tag-content">
+                            #Ionic #AngularJS #Hybrid #ASP.NET #WEB API #SQLSERVER
+                        </div>
+                        <div>
+                            <ul class="list-group   list-group-numbered">
+                                <li class="list-group-item border-0">移動辦公、營收報表、尾牙活動APP</li>
+                                <li class="list-group-item border-0">Ionic、AngularJS、EChart</li>
+                                <li class="list-group-item border-0">研發、教育訓練講師、技術分享</li>
+                            </ul>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="./images/兩岸業務系統整合專案/兩岸業務系統整合專案_thumbnail.png" style="height:200px" class="card-img-top" alt="兩岸業務系統整合專案">
+                        <!-- <div class="overlay">
+                          <p>兩岸業務系統整合專案</p>
+                        </div> -->
+                      </div>     
+                    
+                    <div class="card-body">
+                        <h2 class="card-title">兩岸業務系統整合專案</h2>
+
+                        <p class="card-text">
+                            <div class="text-secondary tag-content">
+                                #ASP.NET #SSRS #SQLServer #SQLProfile #SVN #Trigger #store produce #DTS #JQuery #多語系 #RBCA
+                            </div>
+                            <div>
+                                <ul class="list-group   list-group-numbered">
+                                    <li class="list-group-item border-0">企業內部核心系統</li>
+                                    <li class="list-group-item border-0">多國語言、SSRS、RBCA、業務Know how</li>
+                                    <li class="list-group-item border-0">主導研發與整合、教育訓練講師、維運</li>
+                                </ul>
+                            </div>
+                            </p>          
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#bookingImageModal">
+                    <div class="image-container">
+                        <img src="./images/訂房系統/訂房系統_Thumbnail.png" style="height:200px" class="card-img-top" alt="訂房系統">
+                        <div class="overlay" style="cursor: pointer;">
+                          <p>訂房系統</p>
+                        </div>
+                        <i class="bi bi-search position-absolute top-0 end-0 text-warning fs-4"></i>
+                      </div>  
+                    
+                    <div class="card-body">
+                        <h2 class="card-title">訂房系統</h2>
+                        <p class="card-text">
+                            <div class="text-secondary tag-content">
+                                #.NET CORE MVC #Razor #Entity Framework #JQuery #Code First #Clean architecture #金流串接
+                            </div>
+                            <div>
+                                <ul class="list-group   list-group-numbered">
+                                    <li class="list-group-item border-0">客戶訂房、後台管理</li>
+                                    <li class="list-group-item border-0">.NET6、Clean Architecture、金流串接</li>
+                                    <li class="list-group-item border-0">持續學習、SideProject</li>
+                                </ul>
+                            </div>
+                            </p>                        
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- bookingImageModal Bootstrap 5 Modal -->
+            <div class="modal fade" id="bookingImageModal" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">訂房系統</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Bootstrap 5 Carousel -->
+                            <div id="bookingImageCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./images/訂房系統/訂房系統01.png" class="d-block w-100" alt="Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/訂房系統/訂房系統02.png" class="d-block w-100" alt="Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/訂房系統/訂房系統03.png" class="d-block w-100" alt="Image 3">
+                                    </div>
+                                    <!-- 添加更多的carousel-item，每個對應一張圖片 -->
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#bookingImageCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#bookingImageCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dictImageModal Bootstrap 5 Modal -->
+            <div class="modal fade" id="dictImageModal" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">英語力字典管理系統</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Bootstrap 5 Carousel -->
+                            <div id="dictImageCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./images/英語力字典管理系統/英語力字典管理系統_Thumbnail.png" class="d-block w-100" alt="Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/英語力字典管理系統/英語力字典_後台01.png" class="d-block w-100" alt="Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/英語力字典管理系統/英語力字典_後台02.png" class="d-block w-100" alt="Image 3">
+                                    </div>
+                                    <!-- 添加更多的carousel-item，每個對應一張圖片 -->
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#dictImageCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#dictImageCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobileAppImageModal Bootstrap 5 Modal -->
+            <div class="modal fade" id="mobileAppImageModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">行動化專案</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Bootstrap 5 Carousel -->
+                            <div id="mobilAppImageCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./images/行動化專案/行動化專案_Thumbnail.jpg" class="d-block w-100" alt="Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/行動化專案/行動尾牙活動_合併.png" class="d-block w-100" alt="Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/行動化專案/行動電子表單_合併.jpg" class="d-block w-100" alt="Image 3">
+                                    </div>                                    
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#mobilAppImageCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#mobilAppImageCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
